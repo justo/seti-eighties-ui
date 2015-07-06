@@ -2,11 +2,12 @@
 
 @tab-border: none;
 
-@tab-highlight-color: rgb(79,153,211);
-@tab-background: rgb(30,35,38);
-@tab-background-active: rgb(16,17,18);
-@tab-bar-bottom-border-color: rgb(16,17,18);
+@tab-highlight-color: lighten(#1e1e1e, 4%);
+@tab-background: #262626;
+@tab-background-active: #333333;
+@tab-bar-bottom-border-color: #1e1e1e;
 @tab-bar-background-color: rgb(38,43,48);
+@tab-active-lr-border-color: rgb(29, 29, 29);
 
 @tab-height: 40px;
 @tab-top-padding: 0px;
@@ -15,7 +16,7 @@
 tabs-bar, .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
   background: @tab-bar-background-color;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 16px;
   box-sizing: border-box;
   border-bottom: solid 4px @tab-bar-bottom-border-color;
   // left: 16px;
@@ -108,6 +109,7 @@ tabs-bar, .tab-bar {
     box-shadow: none;
     border: none;
     border-bottom: solid 4px @tab-highlight-color;
+    // border-right: solid 1px @tab-active-lr-border-color;
 
     .title{
       position: relative;
@@ -128,6 +130,7 @@ tabs-bar, .tab-bar {
     &:before {
       border: none;
       border-bottom: solid 4px @tab-highlight-color;
+    //   border-left: solid 1px @tab-active-lr-border-color;
       box-shadow: none;
     }
 

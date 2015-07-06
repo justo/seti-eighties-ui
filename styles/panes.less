@@ -10,7 +10,7 @@
 
 atom-pane-container {
   atom-pane {
-    background-color: lighten(@app-background-color, 5%);
+    background-color: @app-background-color;
     &:focus {
       background-color: @app-background-color;
     }
@@ -29,12 +29,13 @@ atom-pane-container {
 
 // Inactive Pane
 atom-pane:not(.active) {
-  opacity: 0.8;
+  opacity: 0.9;
+  background-color: darken(@app-background-color, 4%);
 
   tabs-tab.active, .tab.active {
-    border-bottom: solid 4px darken(@tab-highlight-color, 20%);
+    border-bottom: solid 4px darken(@tab-highlight-color, 2%);
     &:before {
-      border-bottom: solid 4px darken(@tab-highlight-color, 20%);
+      border-bottom: solid 4px darken(@tab-highlight-color, 2%);
     }
   }
 }
