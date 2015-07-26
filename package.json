@@ -1,7 +1,7 @@
 {
   "name": "seti-eighties-ui",
   "theme": "ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Lower-contrast version of Seti UI.",
   "license": "MIT",
   "repository": "https://github.com/justo/seti-eighties-ui",
